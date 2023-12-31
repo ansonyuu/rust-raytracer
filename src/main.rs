@@ -9,7 +9,7 @@ fn main () -> Result<(), Box<dyn Error>>{
     let mut stdout = io::stdout().lock();
 
     // Use question mark for error propagation
-    stdout.write_all(b"P3\n")?;
+    stdout.write_all(b"P3\n256 256\n255\n")?;
 
     for j in 0..image_height {
         for i in 0..image_width {
